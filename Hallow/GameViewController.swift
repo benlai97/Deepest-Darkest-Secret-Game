@@ -17,7 +17,7 @@ class GameViewController: UIViewController {
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
+            if let scene = SKScene(fileNamed: "Clocktower") {
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
                 
@@ -34,7 +34,7 @@ class GameViewController: UIViewController {
     }
     
     func move(x: CGFloat) {
-        if let scene = SKScene(fileNamed: "GameScene") {
+        if let scene = SKScene(fileNamed: "Clocktower") {
             print("moving \(x < 0 ? "left" : "right")")
             
             let ground = scene.childNode(withName: "CT Ground")
@@ -50,7 +50,7 @@ class GameViewController: UIViewController {
         if (touches.count > 1) { // jump
             print("jump")
         } else { // move
-            guard let scene = SKScene(fileNamed: "GameScene") else { return }
+            guard let scene = SKScene(fileNamed: "Clocktower") else { return }
             guard let touch = touches.first?.location(in: scene) else { return }
             
             let x = touch.x / scene.size.width
