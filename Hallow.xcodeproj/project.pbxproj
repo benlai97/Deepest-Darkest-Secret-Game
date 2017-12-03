@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6874A9731FD3E0A800FA2ABF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6874A9721FD3E0A700FA2ABF /* Assets.xcassets */; };
-		6874A9751FD3E0BD00FA2ABF /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6874A9741FD3E0BC00FA2ABF /* GameScene.sks */; };
-		6874A9771FD3E0CF00FA2ABF /* Tiles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6874A9761FD3E0CF00FA2ABF /* Tiles.sks */; };
+		6874A9811FD3E86800FA2ABF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6874A97E1FD3E86500FA2ABF /* Assets.xcassets */; };
+		6874A9821FD3E86800FA2ABF /* Tiles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6874A97F1FD3E86600FA2ABF /* Tiles.sks */; };
+		6874A9831FD3E86800FA2ABF /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6874A9801FD3E86800FA2ABF /* GameScene.sks */; };
 		AB4BD1CF1FD3DDD900918D4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4BD1CE1FD3DDD900918D4B /* AppDelegate.swift */; };
 		AB4BD1D31FD3DDD900918D4B /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = AB4BD1D21FD3DDD900918D4B /* Actions.sks */; };
 		AB4BD1D51FD3DDD900918D4B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4BD1D41FD3DDD900918D4B /* GameScene.swift */; };
@@ -38,9 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6874A9721FD3E0A700FA2ABF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../438 saved stuff/Assets.xcassets"; sourceTree = "<group>"; };
-		6874A9741FD3E0BC00FA2ABF /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = GameScene.sks; path = "../../../438 saved stuff/GameScene.sks"; sourceTree = "<group>"; };
-		6874A9761FD3E0CF00FA2ABF /* Tiles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Tiles.sks; sourceTree = "<group>"; };
+		6874A97E1FD3E86500FA2ABF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6874A97F1FD3E86600FA2ABF /* Tiles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Tiles.sks; sourceTree = "<group>"; };
+		6874A9801FD3E86800FA2ABF /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		AB4BD1CB1FD3DDD900918D4B /* Hallow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hallow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4BD1CE1FD3DDD900918D4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB4BD1D21FD3DDD900918D4B /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -106,13 +106,13 @@
 			isa = PBXGroup;
 			children = (
 				AB4BD1CE1FD3DDD900918D4B /* AppDelegate.swift */,
-				6874A9741FD3E0BC00FA2ABF /* GameScene.sks */,
 				AB4BD1D21FD3DDD900918D4B /* Actions.sks */,
+				6874A97E1FD3E86500FA2ABF /* Assets.xcassets */,
+				6874A9801FD3E86800FA2ABF /* GameScene.sks */,
+				6874A97F1FD3E86600FA2ABF /* Tiles.sks */,
 				AB4BD1D41FD3DDD900918D4B /* GameScene.swift */,
 				AB4BD1D61FD3DDD900918D4B /* GameViewController.swift */,
-				6874A9761FD3E0CF00FA2ABF /* Tiles.sks */,
 				AB4BD1D81FD3DDD900918D4B /* Main.storyboard */,
-				6874A9721FD3E0A700FA2ABF /* Assets.xcassets */,
 				AB4BD1DD1FD3DDD900918D4B /* LaunchScreen.storyboard */,
 				AB4BD1E01FD3DDD900918D4B /* Info.plist */,
 			);
@@ -246,9 +246,9 @@
 			files = (
 				AB4BD1DA1FD3DDD900918D4B /* Main.storyboard in Resources */,
 				AB4BD1DF1FD3DDD900918D4B /* LaunchScreen.storyboard in Resources */,
-				6874A9731FD3E0A800FA2ABF /* Assets.xcassets in Resources */,
-				6874A9771FD3E0CF00FA2ABF /* Tiles.sks in Resources */,
-				6874A9751FD3E0BD00FA2ABF /* GameScene.sks in Resources */,
+				6874A9821FD3E86800FA2ABF /* Tiles.sks in Resources */,
+				6874A9811FD3E86800FA2ABF /* Assets.xcassets in Resources */,
+				6874A9831FD3E86800FA2ABF /* GameScene.sks in Resources */,
 				AB4BD1D31FD3DDD900918D4B /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
