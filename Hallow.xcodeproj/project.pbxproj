@@ -18,7 +18,7 @@
 		AB4BD1DF1FD3DDD900918D4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4BD1DD1FD3DDD900918D4B /* LaunchScreen.storyboard */; };
 		AB4BD1EA1FD3DDD900918D4B /* HallowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4BD1E91FD3DDD900918D4B /* HallowTests.swift */; };
 		AB4BD1F51FD3DDD900918D4B /* HallowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4BD1F41FD3DDD900918D4B /* HallowUITests.swift */; };
-		AB4BD2031FD3F41E00918D4B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4BD2021FD3F41D00918D4B /* Player.swift */; };
+		AB4BD2031FD3F41E00918D4B /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4BD2021FD3F41D00918D4B /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 		AB4BD1F01FD3DDD900918D4B /* HallowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HallowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4BD1F41FD3DDD900918D4B /* HallowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HallowUITests.swift; sourceTree = "<group>"; };
 		AB4BD1F61FD3DDD900918D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB4BD2021FD3F41D00918D4B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		AB4BD2021FD3F41D00918D4B /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 				AB4BD1CE1FD3DDD900918D4B /* AppDelegate.swift */,
 				AB4BD1D21FD3DDD900918D4B /* Actions.sks */,
 				6874A97E1FD3E86500FA2ABF /* Assets.xcassets */,
-				AB4BD2021FD3F41D00918D4B /* Player.swift */,
+				AB4BD2021FD3F41D00918D4B /* Character.swift */,
 				6874A9801FD3E86800FA2ABF /* Clocktower.sks */,
 				6874A97F1FD3E86600FA2ABF /* Tiles.sks */,
 				AB4BD1D41FD3DDD900918D4B /* GameScene.swift */,
@@ -278,7 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB4BD1D51FD3DDD900918D4B /* GameScene.swift in Sources */,
-				AB4BD2031FD3F41E00918D4B /* Player.swift in Sources */,
+				AB4BD2031FD3F41E00918D4B /* Character.swift in Sources */,
 				AB4BD1D71FD3DDD900918D4B /* GameViewController.swift in Sources */,
 				AB4BD1CF1FD3DDD900918D4B /* AppDelegate.swift in Sources */,
 			);
