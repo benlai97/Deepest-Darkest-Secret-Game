@@ -22,7 +22,7 @@ class GameViewController: UIViewController {
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "Clocktower") {
+            if let scene = SKScene(fileNamed: "Tunnels") {
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
                 
@@ -44,7 +44,7 @@ class GameViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        guard let scene = SKScene(fileNamed: "Clocktower") else { return }
+        guard let scene = SKScene(fileNamed: "Tunnels") else { return }
     
         
         for touch in touches {
