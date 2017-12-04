@@ -12,12 +12,15 @@ enum Direction {
     case left, right
 }
 
+
+
 class Character: SKSpriteNode {
     
+    static let playerCollisionMask: UInt32 = 1
+
     let prefix: String
     var orientation: Direction = .right
     var jumping = false
-    
 
     init(_ prefix: String) {
         self.prefix = prefix
@@ -25,6 +28,16 @@ class Character: SKSpriteNode {
         let texture = SKTexture(imageNamed: "\(prefix)_stand")
        
         super.init(texture: texture, color: .gray, size: texture.size())
+        
+        self.zPosition = 5
+        
+        print(self.size)
+        
+        self.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: self.size.width,
+                                                             height: self.size.height))
+        self.physicsBody?.collisionBitMask = Character.playerCollisionMask | Level.wallCollisionMask
+        self.physicsBody?.categoryBitMask = Character.playerCollisionMask
+        
     }
     
     required init?(coder aDecoder: NSCoder) {

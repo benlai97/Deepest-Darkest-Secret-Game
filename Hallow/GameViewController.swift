@@ -22,7 +22,7 @@ class GameViewController: UIViewController {
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "Olin") {
+            if let scene = SKScene(fileNamed: "Clocktower") {
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
                 
@@ -34,6 +34,7 @@ class GameViewController: UIViewController {
             }
             
             view.ignoresSiblingOrder = true
+            view.showsPhysics = true
             
             view.showsFPS = true
             view.showsNodeCount = true

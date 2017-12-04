@@ -25,7 +25,7 @@ class GameScene: SKScene {
         }
         
         background.position = CGPoint(x: frame.size.width / 2, y: frame.size.height / 2)
-        addChild(background)
+        // addChild(background)
         
         // Create shape node to use during mouse interaction
         let w = (self.size.width + self.size.height) * 0.05

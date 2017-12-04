@@ -22,6 +22,8 @@
 		AB4BD1EA1FD3DDD900918D4B /* HallowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4BD1E91FD3DDD900918D4B /* HallowTests.swift */; };
 		AB4BD1F51FD3DDD900918D4B /* HallowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4BD1F41FD3DDD900918D4B /* HallowUITests.swift */; };
 		AB4BD2031FD3F41E00918D4B /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4BD2021FD3F41D00918D4B /* Character.swift */; };
+		AB4FAE991FD4D37E0028ED68 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4FAE981FD4D37E0028ED68 /* Level.swift */; };
+		AB5F6A461FD4D402006DCEF3 /* Clocktower.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5F6A451FD4D402006DCEF3 /* Clocktower.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		AB4BD1F41FD3DDD900918D4B /* HallowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HallowUITests.swift; sourceTree = "<group>"; };
 		AB4BD1F61FD3DDD900918D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB4BD2021FD3F41D00918D4B /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		AB4FAE981FD4D37E0028ED68 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		AB5F6A451FD4D402006DCEF3 /* Clocktower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clocktower.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,8 @@
 				6874A97E1FD3E86500FA2ABF /* Assets.xcassets */,
 				AB4BD2021FD3F41D00918D4B /* Character.swift */,
 				6874A9801FD3E86800FA2ABF /* Clocktower.sks */,
+				AB5F6A451FD4D402006DCEF3 /* Clocktower.swift */,
+				AB4FAE981FD4D37E0028ED68 /* Level.swift */,
 				68C97B881FD484E2003CCABC /* Olin.sks */,
 				68C97B8A1FD48615003CCABC /* Tunnels.sks */,
 				68C97B8C1FD4BE7C003CCABC /* FinalStairs.sks */,
@@ -290,8 +296,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB4BD1D51FD3DDD900918D4B /* GameScene.swift in Sources */,
+				AB4FAE991FD4D37E0028ED68 /* Level.swift in Sources */,
 				AB4BD2031FD3F41E00918D4B /* Character.swift in Sources */,
 				AB4BD1D71FD3DDD900918D4B /* GameViewController.swift in Sources */,
+				AB5F6A461FD4D402006DCEF3 /* Clocktower.swift in Sources */,
 				AB4BD1CF1FD3DDD900918D4B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
