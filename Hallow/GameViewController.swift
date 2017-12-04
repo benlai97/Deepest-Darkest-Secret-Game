@@ -45,9 +45,10 @@ class GameViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         guard let scene = SKScene(fileNamed: "Clocktower") else { return }
+    
         
-        if let touch = touches.first {
-            
+        for touch in touches {
+
             let position = touch.location(in: scene).x / view.frame.size.width
             let orientation = position < 0.5 ? Direction.left : Direction.right
             
@@ -57,7 +58,7 @@ class GameViewController: UIViewController {
             player.walk(taps[0].1)
             
         }
-        
+
         if taps.count > 1 {
             player.jump()
         }
@@ -66,7 +67,7 @@ class GameViewController: UIViewController {
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        if let touch = touches.first {
+        for touch in touches {
             taps = taps.filter { return $0.0 != touch }
         }
         

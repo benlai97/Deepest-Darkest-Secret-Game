@@ -18,6 +18,7 @@ class Character: SKSpriteNode {
     var orientation: Direction = .right
     var jumping = false
     
+
     init(_ prefix: String) {
         self.prefix = prefix
         
@@ -79,7 +80,7 @@ class Character: SKSpriteNode {
         }
     }
 
-    func face(_ direction: Direction) {
+    private func face(_ direction: Direction) {
         guard orientation != direction else { return }
         
         orientation = direction
