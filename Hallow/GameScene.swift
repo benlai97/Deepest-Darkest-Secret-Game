@@ -13,7 +13,7 @@ class GameScene: SKScene {
     
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
-    var background = SKSpriteNode(imageNamed: "tunnelBackground")
+    var background = SKSpriteNode(imageNamed: "tunnel background")
     
     override func didMove(to view: SKView) {
         
