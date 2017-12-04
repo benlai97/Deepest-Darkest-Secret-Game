@@ -31,12 +31,15 @@ class Character: SKSpriteNode {
         
         self.zPosition = 5
         
-        print(self.size)
-        
-        self.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: self.size.width,
+        self.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: self.size.width * 0.7,
                                                              height: self.size.height))
         self.physicsBody?.collisionBitMask = Character.playerCollisionMask | Level.wallCollisionMask
         self.physicsBody?.categoryBitMask = Character.playerCollisionMask
+        
+        self.physicsBody?.angularVelocity = 0
+        self.physicsBody?.allowsRotation = false
+        
+        self.physicsBody?.restitution = 0
         
     }
     
@@ -51,17 +54,16 @@ class Character: SKSpriteNode {
     }
     
     func jump() {
-        if (!jumping) {
+        if (!jumping && physicsBody?.velocity.dy == 0) {
             print("jumping")
             
             texture = SKTexture(imageNamed: "\(prefix)_jump")
             
-            let moveUp = SKAction.moveBy(x: 0, y: 75, duration: 0.25)
-            let movedown = SKAction.moveBy(x: 0, y: -75, duration: 0.25)
-            
+            let moveUp = SKAction.moveBy(x: 0, y: 150, duration: 0.25)
+
             jumping = true
-            
-            run(SKAction.sequence([moveUp, movedown])) {
+
+            run(moveUp) {
                 self.jumping = false
             }
         }

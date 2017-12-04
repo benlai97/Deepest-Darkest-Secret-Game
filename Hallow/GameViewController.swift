@@ -12,8 +12,7 @@ import GameplayKit
 
 class GameViewController: UIViewController {
     
-    var player = Character("player")
-    var moving = false
+
 
     var taps: [(UITouch, Direction)] = []
 
@@ -25,12 +24,9 @@ class GameViewController: UIViewController {
             if let scene = SKScene(fileNamed: "Clocktower") {
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
-                
-                scene.addChild(self.player)
-                
+
                 // Present the scene
                 view.presentScene(scene)
-                
             }
             
             view.ignoresSiblingOrder = true
@@ -39,45 +35,18 @@ class GameViewController: UIViewController {
             view.showsFPS = true
             view.showsNodeCount = true
             view.isMultipleTouchEnabled = true
-            
         }
+        
+        changeScene(to: "Olin")
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        guard let scene = SKScene(fileNamed: "Clocktower") else { return }
-    
-        
-        for touch in touches {
+    func changeScene(to fileNamed: String) {
+        let transition = SKTransition.fade(withDuration: 3.0)
 
-            let position = touch.location(in: scene).x / view.frame.size.width
-            let orientation = position < 0.5 ? Direction.left : Direction.right
-            
-            let tap = (touch, orientation)
-            taps.append(tap)
-            
-            player.walk(taps[0].1)
-            
+        if let nextScene = SKScene(fileNamed: fileNamed), let view = view as? SKView {
+            nextScene.scaleMode = .aspectFill
+            view.presentScene(nextScene, transition: transition)
         }
-
-        if taps.count > 1 {
-            player.jump()
-        }
-
-    }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        for touch in touches {
-            taps = taps.filter { return $0.0 != touch }
-        }
-        
-        if taps.count > 0 {
-            player.walk(taps[0].1)
-        } else {
-            player.stand()
-        }
-        
     }
 
     override var shouldAutorotate: Bool {
@@ -91,6 +60,8 @@ class GameViewController: UIViewController {
             return .all
         }
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -24,6 +24,7 @@
 		AB4BD2031FD3F41E00918D4B /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4BD2021FD3F41D00918D4B /* Character.swift */; };
 		AB4FAE991FD4D37E0028ED68 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4FAE981FD4D37E0028ED68 /* Level.swift */; };
 		AB5F6A461FD4D402006DCEF3 /* Clocktower.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5F6A451FD4D402006DCEF3 /* Clocktower.swift */; };
+		AB962A021FD52F5900253094 /* Interactable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB962A011FD52F5900253094 /* Interactable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		AB4BD2021FD3F41D00918D4B /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		AB4FAE981FD4D37E0028ED68 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		AB5F6A451FD4D402006DCEF3 /* Clocktower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clocktower.swift; sourceTree = "<group>"; };
+		AB962A011FD52F5900253094 /* Interactable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				68C97B8A1FD48615003CCABC /* Tunnels.sks */,
 				68C97B8C1FD4BE7C003CCABC /* FinalStairs.sks */,
 				6874A97F1FD3E86600FA2ABF /* Tiles.sks */,
+				AB962A011FD52F5900253094 /* Interactable.swift */,
 				AB4BD1D41FD3DDD900918D4B /* GameScene.swift */,
 				AB4BD1D61FD3DDD900918D4B /* GameViewController.swift */,
 				AB4BD1D81FD3DDD900918D4B /* Main.storyboard */,
@@ -300,6 +303,7 @@
 				AB4BD2031FD3F41E00918D4B /* Character.swift in Sources */,
 				AB4BD1D71FD3DDD900918D4B /* GameViewController.swift in Sources */,
 				AB5F6A461FD4D402006DCEF3 /* Clocktower.swift in Sources */,
+				AB962A021FD52F5900253094 /* Interactable.swift in Sources */,
 				AB4BD1CF1FD3DDD900918D4B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
