@@ -29,6 +29,38 @@ class GameViewController: UIViewController {
             
             view.showsFPS = true
             view.showsNodeCount = true
+            view.isMultipleTouchEnabled = true
+        }
+    }
+    
+    func move(x: CGFloat) {
+        if let scene = SKScene(fileNamed: "Clocktower") {
+            print("moving \(x < 0 ? "left" : "right")")
+            
+            let ground = scene.childNode(withName: "CT Ground")
+            ground?.position.x -= x
+            
+            let bg = scene.childNode(withName: "CT Background")
+            bg?.position.x -= x * 0.5
+            
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if (touches.count > 1) { // jump
+            print("jump")
+        } else { // move
+            guard let scene = SKScene(fileNamed: "Clocktower") else { return }
+            guard let touch = touches.first?.location(in: scene) else { return }
+            
+            let x = touch.x / scene.size.width
+            
+            if (x < 0.5) {
+                move(x: -5)
+            } else {
+                move(x: 5)
+            }
+
         }
     }
 
@@ -38,7 +70,7 @@ class GameViewController: UIViewController {
 
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .phone {
-            return .allButUpsideDown
+            return .landscape
         } else {
             return .all
         }
