@@ -21,6 +21,8 @@ class Character: SKSpriteNode {
     let prefix: String
     var orientation: Direction = .right
     var jumping = false
+    
+    let spotlight = SKLightNode()
 
     init(_ prefix: String) {
         self.prefix = prefix
@@ -41,6 +43,9 @@ class Character: SKSpriteNode {
         
         self.physicsBody?.restitution = 0
         
+        spotlight.position = position
+        
+        self.addChild(spotlight)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -51,6 +56,7 @@ class Character: SKSpriteNode {
     func stand() {
         self.texture = SKTexture(imageNamed: "\(prefix)_stand")
         removeAction(forKey: "move")
+        removeAction(forKey: "spotmove")
     }
     
     func jump() {
@@ -66,6 +72,8 @@ class Character: SKSpriteNode {
             run(moveUp) {
                 self.jumping = false
             }
+            
+            spotlight.run(moveUp)
         }
     }
     
@@ -90,8 +98,10 @@ class Character: SKSpriteNode {
         
         if (orientation == .left) {
             run(SKAction.repeatForever(walkAndMoveLeft), withKey: "move")
+            spotlight.run(SKAction.repeatForever(walkAndMoveLeft), withKey: "spotmove")
         } else if (orientation == .right) {
             run(SKAction.repeatForever(walkAndMoveRight), withKey: "move")
+            spotlight.run(SKAction.repeatForever(walkAndMoveRight), withKey: "spotmove")
         }
     }
 

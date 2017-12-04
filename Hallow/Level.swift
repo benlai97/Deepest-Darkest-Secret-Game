@@ -11,13 +11,13 @@ import SpriteKit
 class Level: SKScene {
     
     static let wallCollisionMask: UInt32 = 2
-    
-    
+
     var player = Character("player")
+    var background: SKNode?
+    var light: SKLightNode?
 
     var taps: [(UITouch, Direction)] = []
-    
-    
+
     override func didMove(to view: SKView) {
         self.physicsWorld.gravity = CGVector(dx: 0, dy: -4.9)
         
@@ -27,6 +27,14 @@ class Level: SKScene {
             if let fg = scene.childNode(withName: "fg") {
                 self.physicsBody = SKPhysicsBody(edgeLoopFrom: fg.frame)
             }
+            
+            if let background = scene.childNode(withName: "background") {
+                self.background = background
+            }
+            
+//            if let light = scene.childNode(withName: "spotlight") {
+//                
+//            }
             
             let camera = SKCameraNode()
             self.camera = camera
@@ -51,19 +59,27 @@ class Level: SKScene {
 
         for touch in touches {
             
-            if let view = view {
+            if let view = view, let bg = background {
                 let position = touch.location(in: scene).x / view.frame.size.width
                 let orientation = position < 0.5 ? Direction.left : Direction.right
                 
                 let tap = (touch, orientation)
                 taps.append(tap)
                 player.walk(taps[0].1)
+                
+                let offset: CGFloat = orientation == .left ? -70 : 70
+                let move = SKAction.moveBy(x: offset, y: 0, duration: 1)
+
+                bg.run(SKAction.repeatForever(move), withKey: "parallax")
             }
+            
         }
         
         if taps.count > 1 {
             player.jump()
         }
+        
+
         
     }
     
@@ -77,6 +93,11 @@ class Level: SKScene {
             player.walk(taps[0].1)
         } else {
             player.stand()
+            
+            if let bg = background {
+                bg.removeAction(forKey: "parallax")
+            }
+            
         }
         
     }

@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F8EE8F41FD550790065680E /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F8EE8F31FD550780065680E /* music.mp3 */; };
 		6874A9811FD3E86800FA2ABF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6874A97E1FD3E86500FA2ABF /* Assets.xcassets */; };
 		6874A9821FD3E86800FA2ABF /* Tiles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6874A97F1FD3E86600FA2ABF /* Tiles.sks */; };
 		6874A9831FD3E86800FA2ABF /* Clocktower.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6874A9801FD3E86800FA2ABF /* Clocktower.sks */; };
-		6884DF521FD527C900662E94 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6884DF511FD527C900662E94 /* music.mp3 */; };
 		68C97B891FD484E2003CCABC /* Olin.sks in Resources */ = {isa = PBXBuildFile; fileRef = 68C97B881FD484E2003CCABC /* Olin.sks */; };
 		68C97B8B1FD48615003CCABC /* Tunnels.sks in Resources */ = {isa = PBXBuildFile; fileRef = 68C97B8A1FD48615003CCABC /* Tunnels.sks */; };
 		68C97B8D1FD4BE7D003CCABC /* FinalStairs.sks in Resources */ = {isa = PBXBuildFile; fileRef = 68C97B8C1FD4BE7C003CCABC /* FinalStairs.sks */; };
@@ -45,10 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F8EE8F31FD550780065680E /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = music.mp3; path = ../../../../../../Downloads/music.mp3; sourceTree = "<group>"; };
 		6874A97E1FD3E86500FA2ABF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6874A97F1FD3E86600FA2ABF /* Tiles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Tiles.sks; sourceTree = "<group>"; };
 		6874A9801FD3E86800FA2ABF /* Clocktower.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Clocktower.sks; sourceTree = "<group>"; };
-		6884DF511FD527C900662E94 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		68C97B881FD484E2003CCABC /* Olin.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Olin.sks; sourceTree = "<group>"; };
 		68C97B8A1FD48615003CCABC /* Tunnels.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Tunnels.sks; sourceTree = "<group>"; };
 		68C97B8C1FD4BE7C003CCABC /* FinalStairs.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FinalStairs.sks; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 		6884DF501FD527AF00662E94 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				6884DF511FD527C900662E94 /* music.mp3 */,
+				1F8EE8F31FD550780065680E /* music.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -277,12 +277,12 @@
 				68C97B891FD484E2003CCABC /* Olin.sks in Resources */,
 				AB4BD1DF1FD3DDD900918D4B /* LaunchScreen.storyboard in Resources */,
 				68C97B8D1FD4BE7D003CCABC /* FinalStairs.sks in Resources */,
-				6884DF521FD527C900662E94 /* music.mp3 in Resources */,
 				68C97B8B1FD48615003CCABC /* Tunnels.sks in Resources */,
 				6874A9821FD3E86800FA2ABF /* Tiles.sks in Resources */,
 				6874A9811FD3E86800FA2ABF /* Assets.xcassets in Resources */,
 				6874A9831FD3E86800FA2ABF /* Clocktower.sks in Resources */,
 				AB4BD1D31FD3DDD900918D4B /* Actions.sks in Resources */,
+				1F8EE8F41FD550790065680E /* music.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
