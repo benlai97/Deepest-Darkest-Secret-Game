@@ -13,7 +13,6 @@ class GameScene: SKScene {
     
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
-//    var background = SKSpriteNode(imageNamed: "tunnel background")
  
     override func didMove(to view: SKView) {
         
@@ -24,10 +23,6 @@ class GameScene: SKScene {
             label.run(SKAction.fadeIn(withDuration: 2.0))
         }
         
-        
-        
-//        background.position = CGPoint(x: frame.size.width / 2, y: frame.size.height / 2)
-//        addChild(background)
         
         // Create shape node to use during mouse interaction
         let w = (self.size.width + self.size.height) * 0.05
