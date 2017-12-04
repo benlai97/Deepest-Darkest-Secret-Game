@@ -41,6 +41,7 @@ class Level: SKScene {
         
         if let camera = camera {
             camera.position = player.position
+            camera.position.y += 120
         }
     }
     

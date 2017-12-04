@@ -10,10 +10,11 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
+
+var gameView: GameViewController?
+
 class GameViewController: UIViewController {
     
-
-
     var taps: [(UITouch, Direction)] = []
 
     override func viewDidLoad() { 
@@ -37,9 +38,11 @@ class GameViewController: UIViewController {
             view.isMultipleTouchEnabled = true
         }
         
-        changeScene(to: "Olin")
+        gameView = self
+        
+//        changeScene(to: "Olin")
     }
-    
+
     func changeScene(to fileNamed: String) {
         let transition = SKTransition.fade(withDuration: 3.0)
 

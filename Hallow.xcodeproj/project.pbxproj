@@ -10,12 +10,12 @@
 		6874A9811FD3E86800FA2ABF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6874A97E1FD3E86500FA2ABF /* Assets.xcassets */; };
 		6874A9821FD3E86800FA2ABF /* Tiles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6874A97F1FD3E86600FA2ABF /* Tiles.sks */; };
 		6874A9831FD3E86800FA2ABF /* Clocktower.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6874A9801FD3E86800FA2ABF /* Clocktower.sks */; };
+		6884DF521FD527C900662E94 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6884DF511FD527C900662E94 /* music.mp3 */; };
 		68C97B891FD484E2003CCABC /* Olin.sks in Resources */ = {isa = PBXBuildFile; fileRef = 68C97B881FD484E2003CCABC /* Olin.sks */; };
 		68C97B8B1FD48615003CCABC /* Tunnels.sks in Resources */ = {isa = PBXBuildFile; fileRef = 68C97B8A1FD48615003CCABC /* Tunnels.sks */; };
 		68C97B8D1FD4BE7D003CCABC /* FinalStairs.sks in Resources */ = {isa = PBXBuildFile; fileRef = 68C97B8C1FD4BE7C003CCABC /* FinalStairs.sks */; };
 		AB4BD1CF1FD3DDD900918D4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4BD1CE1FD3DDD900918D4B /* AppDelegate.swift */; };
 		AB4BD1D31FD3DDD900918D4B /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = AB4BD1D21FD3DDD900918D4B /* Actions.sks */; };
-		AB4BD1D51FD3DDD900918D4B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4BD1D41FD3DDD900918D4B /* GameScene.swift */; };
 		AB4BD1D71FD3DDD900918D4B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4BD1D61FD3DDD900918D4B /* GameViewController.swift */; };
 		AB4BD1DA1FD3DDD900918D4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4BD1D81FD3DDD900918D4B /* Main.storyboard */; };
 		AB4BD1DF1FD3DDD900918D4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4BD1DD1FD3DDD900918D4B /* LaunchScreen.storyboard */; };
@@ -48,13 +48,13 @@
 		6874A97E1FD3E86500FA2ABF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6874A97F1FD3E86600FA2ABF /* Tiles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Tiles.sks; sourceTree = "<group>"; };
 		6874A9801FD3E86800FA2ABF /* Clocktower.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Clocktower.sks; sourceTree = "<group>"; };
+		6884DF511FD527C900662E94 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		68C97B881FD484E2003CCABC /* Olin.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Olin.sks; sourceTree = "<group>"; };
 		68C97B8A1FD48615003CCABC /* Tunnels.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Tunnels.sks; sourceTree = "<group>"; };
 		68C97B8C1FD4BE7C003CCABC /* FinalStairs.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FinalStairs.sks; sourceTree = "<group>"; };
 		AB4BD1CB1FD3DDD900918D4B /* Hallow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hallow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4BD1CE1FD3DDD900918D4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB4BD1D21FD3DDD900918D4B /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		AB4BD1D41FD3DDD900918D4B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		AB4BD1D61FD3DDD900918D4B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		AB4BD1D91FD3DDD900918D4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB4BD1DE1FD3DDD900918D4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -96,9 +96,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6884DF501FD527AF00662E94 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6884DF511FD527C900662E94 /* music.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		AB4BD1C21FD3DDD900918D4B = {
 			isa = PBXGroup;
 			children = (
+				6884DF501FD527AF00662E94 /* Sounds */,
 				AB4BD1CD1FD3DDD900918D4B /* Hallow */,
 				AB4BD1E81FD3DDD900918D4B /* HallowTests */,
 				AB4BD1F31FD3DDD900918D4B /* HallowUITests */,
@@ -131,7 +140,6 @@
 				68C97B8C1FD4BE7C003CCABC /* FinalStairs.sks */,
 				6874A97F1FD3E86600FA2ABF /* Tiles.sks */,
 				AB962A011FD52F5900253094 /* Interactable.swift */,
-				AB4BD1D41FD3DDD900918D4B /* GameScene.swift */,
 				AB4BD1D61FD3DDD900918D4B /* GameViewController.swift */,
 				AB4BD1D81FD3DDD900918D4B /* Main.storyboard */,
 				AB4BD1DD1FD3DDD900918D4B /* LaunchScreen.storyboard */,
@@ -269,6 +277,7 @@
 				68C97B891FD484E2003CCABC /* Olin.sks in Resources */,
 				AB4BD1DF1FD3DDD900918D4B /* LaunchScreen.storyboard in Resources */,
 				68C97B8D1FD4BE7D003CCABC /* FinalStairs.sks in Resources */,
+				6884DF521FD527C900662E94 /* music.mp3 in Resources */,
 				68C97B8B1FD48615003CCABC /* Tunnels.sks in Resources */,
 				6874A9821FD3E86800FA2ABF /* Tiles.sks in Resources */,
 				6874A9811FD3E86800FA2ABF /* Assets.xcassets in Resources */,
@@ -298,7 +307,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB4BD1D51FD3DDD900918D4B /* GameScene.swift in Sources */,
 				AB4FAE991FD4D37E0028ED68 /* Level.swift in Sources */,
 				AB4BD2031FD3F41E00918D4B /* Character.swift in Sources */,
 				AB4BD1D71FD3DDD900918D4B /* GameViewController.swift in Sources */,

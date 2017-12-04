@@ -13,8 +13,7 @@ class GameScene: SKScene {
     
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
-    var background = SKSpriteNode(imageNamed: "tunnel background")
-    
+ 
     override func didMove(to view: SKView) {
         
         // Get label node from scene and store it for use later
@@ -23,9 +22,6 @@ class GameScene: SKScene {
             label.alpha = 0.0
             label.run(SKAction.fadeIn(withDuration: 2.0))
         }
-        
-        background.position = CGPoint(x: frame.size.width / 2, y: frame.size.height / 2)
-        // addChild(background)
         
         // Create shape node to use during mouse interaction
         let w = (self.size.width + self.size.height) * 0.05
@@ -85,6 +81,11 @@ class GameScene: SKScene {
         for t in touches { self.touchUp(atPoint: t.location(in: self)) }
     }
     
+//    func updateCamera() {
+//        if let camera = camera {
+//            camera.position = CGPoint(x: player!.position.x, y: player!.position.y)
+//        }
+//    }
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
